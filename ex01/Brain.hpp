@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/03 12:53:36 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/04 16:09:40 by bsunda           ###   ########.fr       */
+/*   Created: 2025/02/03 15:04:08 by bsunda            #+#    #+#             */
+/*   Updated: 2025/02/04 15:27:50 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_H
-#define CAT_H
+#ifndef BRAIN_H
+#define BRAIN_H
 
-#include "Animal.hpp"
+#include <iostream>
+#include <string>
 
-class Cat: public AAnimal{
+# define NB_BRAIN 100
+
+class Brain{
 
 public:
-	Cat(void);
-	Cat(Cat const & src);
-	Cat & operator=(Cat const & rhs);
-	virtual ~Cat(void);
-	
-	virtual void makeSound() const;
-	virtual std::string getType() const;
+	Brain(void);
+	Brain (Brain const & src);
+	Brain & operator=(Brain const & rhs);
+	~Brain(void);
 
 private:
-	std::string type;
+	std::string	_ideas[100];
+	
 };
 
-#endif 
+#endif
