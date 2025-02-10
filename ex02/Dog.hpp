@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/03 15:04:08 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/08 10:37:54 by bsunda           ###   ########.fr       */
+/*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
+/*   Updated: 2025/02/08 10:58:30 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_H
-#define BRAIN_H
+#ifndef DOG_H
+#define DOG_H
 
-#include <iostream>
-#include <string>
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-# define NB_BRAIN 100
-
-class Brain{
+class Dog: public AAnimal{
 
 public:
-	Brain(void);
-	Brain (Brain const & src);
-	Brain & operator=(Brain const & rhs);
-	~Brain(void);
+	Dog(void);
+	Dog(Dog const & src);
+	Dog & operator=(Dog const & rhs);
+	virtual ~Dog(void);
+	
+	virtual void makeSound() const;
+	virtual std::string getType() const;
 
 private:
-	std::string	_ideas[100];
+	std::string type;	
+	Brain		*_myBrain;
 };
 
-#endif
+#endif 

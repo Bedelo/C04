@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:40:10 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/04 15:59:56 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/08 10:40:47 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int main(){
 	wrongCat->makeSound();
 	std::cout << std::endl;
 
-	//OBJECT TO DELETE Valgrind check
+
 	delete i;
 	delete j;
 	delete meta;

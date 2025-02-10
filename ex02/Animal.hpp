@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/03 15:04:08 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/08 10:37:54 by bsunda           ###   ########.fr       */
+/*   Created: 2025/02/03 11:36:21 by bsunda            #+#    #+#             */
+/*   Updated: 2025/02/09 12:22:39 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BRAIN_H
-#define BRAIN_H
+#ifndef ANIMAL_H
+#define ANIMAL_H
 
 #include <iostream>
 #include <string>
 
-# define NB_BRAIN 100
+class AAnimal{
 
-class Brain{
+protected:
+	std::string type;
 
 public:
-	Brain(void);
-	Brain (Brain const & src);
-	Brain & operator=(Brain const & rhs);
-	~Brain(void);
-
-private:
-	std::string	_ideas[100];
+	AAnimal(void);
+	AAnimal(AAnimal const & src);
+	AAnimal & operator=(AAnimal const & rhs);
+	virtual ~AAnimal(void);
+	
+	virtual std::string getType() const;
+	virtual void makeSound() const = 0;
 };
 
 #endif

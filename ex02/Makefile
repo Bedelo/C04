@@ -1,4 +1,4 @@
-NAME	=  burning
+NAME	=  burning_abstract
 CC		= c++
 CFLAGS	= -g3 -Wall -Werror -Wextra -std=c++98
 RM		= rm -f
