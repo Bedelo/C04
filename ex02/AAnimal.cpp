@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:36:27 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:51:13 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 15:35:05 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./Animal.hpp"
+#include "./AAnimal.hpp"
 
 AAnimal::AAnimal(void): _type(""){
 	std::cout << "Constructor default called" << std::endl;
@@ -35,10 +35,6 @@ AAnimal::~AAnimal(void){
 	std::cout << "Destructor called" << std::endl;
 	return ;
 }
-
-// void AAnimal::makeSound() const{
-// 	std::cout << "The animal makes its own sound" << std::endl;
-// }
 
 std::string  AAnimal::getType() const{
 	return this->_type;

@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:07:33 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 12:52:17 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 16:05:23 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 	
 AMateria::AMateria(void){
+	this->_type = "";
 	return ;
 }
 
@@ -43,5 +44,5 @@ std::string const & AMateria::getType() const{
 }
 
 void AMateria::use(ICharacter& target){
-	std::cout << "Default behaviour of use method !!" << std::endl;
+	std::cout << "Using of " << this->_type << " on target " << target.getName() << std::endl;
 }

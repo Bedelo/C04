@@ -6,12 +6,12 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:00:57 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 11:44:57 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 16:19:58 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "./IMateriaSource.hpp"
+#include "./MateriaSource.hpp"
 #include "./Cure.hpp"
 #include "./Ice.hpp"
 #include "./Character.hpp"

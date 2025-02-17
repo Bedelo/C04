@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 10:38:32 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:52:27 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 16:32:55 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,15 @@ int	main(void){
 			tab[size] = new Dog();
 		else
 			tab[size] = new Cat();
+		std::cout << "My type is " << tab[size]->getType() << std::endl; 
 		size++;
 		std::cout << std::endl;
 	}
-	
 
 	// delete meta;
 	int iter = 0;
 	while (iter < 6){
-		std::cout << "Removing of Animal " << iter << ":" << std::endl;
+		std::cout << "Removing of Animal " << iter + 1 << ":" << std::endl;
 		delete tab[iter];
 		std::cout << std::endl;		
 		iter++;

@@ -4,7 +4,7 @@ CXXFLAGS	= -g3 -Wall -Werror -Wextra -std=c++98
 RM		= rm -f
 
 SRCS	=	./main.cpp \
-			./Animal.cpp \
+			./AAnimal.cpp \
 			./Cat.cpp \
 			./Brain.cpp \
 			./Dog.cpp 

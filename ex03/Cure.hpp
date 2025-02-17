@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:41:31 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 12:48:45 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 17:16:14 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ public:
 	
 	Cure(const Cure& src); 
 	Cure& operator=(const Cure& rhs);
-	~Cure(); 
+	virtual ~Cure(); 
 	
-	std::string const & getType() const;
-	Cure* clone() const;
-	void use(ICharacter& target);
+	virtual std::string const & getType() const;
+	virtual Cure* clone() const;
+	virtual void use(ICharacter& target);
 };
 
 #endif
