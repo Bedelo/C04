@@ -6,13 +6,13 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:36:27 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:04:06 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:44:45 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./Animal.hpp"
 
-Animal::Animal(void): type(""){
+Animal::Animal(void): _type(""){
 	std::cout << "Constructor default called" << std::endl;
 	return ;
 }
@@ -26,7 +26,7 @@ Animal::Animal(Animal const & src){
 Animal & Animal::operator=(Animal const & rhs){
 	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &rhs){
-		this->type = rhs.type;
+		this->_type = rhs._type;
 	}
 	return *this;
 }
@@ -41,5 +41,5 @@ void Animal::makeSound() const{
 }
 
 std::string  Animal::getType() const{
-	return this->type;
+	return this->_type;
 }

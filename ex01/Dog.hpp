@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:10:04 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:45:29 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ public:
 	virtual std::string getType() const;
 
 private:
-	std::string _type;	
 	Brain		*_myBrain;
 };
 

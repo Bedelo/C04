@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:36:21 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/09 12:22:39 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:51:32 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class AAnimal{
 
 protected:
-	std::string type;
+	std::string _type;
 
 public:
 	AAnimal(void);

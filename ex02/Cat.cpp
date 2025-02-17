@@ -6,14 +6,15 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/08 10:55:54 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:50:27 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(void): _type("Cat"){
+Cat::Cat(void): AAnimal(){
 	std::cout << "Cat Constructor default called" << std::endl;
+	this->_type = "Cat";
 	_myBrain = new Brain();
 	return ;
 }
