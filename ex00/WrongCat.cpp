@@ -6,14 +6,15 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 14:38:41 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:01:03 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(void): type("WrongCat"){
+WrongCat::WrongCat(void): WrongAnimal(){
 	std::cout << "WrongCat Constructor default called" << std::endl;
+	this->type = "WrongCat";
 	return ;
 }
 

@@ -1,6 +1,6 @@
 NAME	=  burning
-CC		= c++
-CFLAGS	= -g3 -Wall -Werror -Wextra -std=c++98
+CXX		= c++
+CXXFLAGS	= -g3 -Wall -Werror -Wextra -std=c++98
 RM		= rm -f
 
 SRCS	=	./main.cpp \
@@ -17,10 +17,10 @@ OBJS	= $(SRCS:.cpp=.o)
 all	: $(NAME)
 
 $(NAME)	: $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 %.o : %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean :
 	$(RM) *.o

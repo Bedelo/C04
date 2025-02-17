@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/04 16:09:49 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 09:54:56 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "Animal.hpp"
 
-class Dog: public AAnimal{
+class Dog: public Animal{
 
 public:
 	Dog(void);

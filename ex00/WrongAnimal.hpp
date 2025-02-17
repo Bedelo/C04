@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:36:21 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/04 16:10:00 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 09:55:37 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@
 #include <iostream>
 #include <string>
 
-class AWrongAnimal{
+class WrongAnimal{
 
 protected:
 	std::string type;
 
 public:
-	AWrongAnimal(void);
-	AWrongAnimal(AWrongAnimal const & src);
-	AWrongAnimal & operator=(AWrongAnimal const & rhs);
-	virtual ~AWrongAnimal(void);
+	WrongAnimal(void);
+	WrongAnimal(WrongAnimal const & src);
+	WrongAnimal & operator=(WrongAnimal const & rhs);
+	virtual ~WrongAnimal(void);
 	
 	virtual void makeSound() const;
 	virtual std::string getType() const;

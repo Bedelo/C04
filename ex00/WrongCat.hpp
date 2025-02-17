@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:36 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 14:37:27 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 09:55:52 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "WrongAnimal.hpp"
 
-class WrongCat: public AWrongAnimal{
+class WrongCat: public WrongAnimal{
 
 public:
 	WrongCat(void);

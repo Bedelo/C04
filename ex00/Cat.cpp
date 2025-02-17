@@ -6,13 +6,13 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/04 15:56:26 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 09:54:49 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(void): AAnimal(){
+Cat::Cat(void): Animal(){
 	this->type = "Cat";
 	std::cout << "Cat Constructor default called" << std::endl;
 	return ;
