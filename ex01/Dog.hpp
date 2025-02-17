@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/08 10:58:30 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:10:04 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "Animal.hpp"
 #include "Brain.hpp"
 
-class Dog: public AAnimal{
+class Dog: public Animal{
 
 public:
 	Dog(void);
@@ -28,7 +28,7 @@ public:
 	virtual std::string getType() const;
 
 private:
-	std::string type;	
+	std::string _type;	
 	Brain		*_myBrain;
 };
 

@@ -6,24 +6,24 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 11:36:27 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/03 13:40:02 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:04:06 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./Animal.hpp"
 
-AAnimal::AAnimal(void): type(""){
+Animal::Animal(void): type(""){
 	std::cout << "Constructor default called" << std::endl;
 	return ;
 }
 
-AAnimal::AAnimal(AAnimal const & src){
+Animal::Animal(Animal const & src){
 	std::cout << "Copy constructor called" << std::endl;
 	*this = src;
 	return ; 
 }
 
-AAnimal & AAnimal::operator=(AAnimal const & rhs){
+Animal & Animal::operator=(Animal const & rhs){
 	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &rhs){
 		this->type = rhs.type;
@@ -31,15 +31,15 @@ AAnimal & AAnimal::operator=(AAnimal const & rhs){
 	return *this;
 }
 
-AAnimal::~AAnimal(void){
+Animal::~Animal(void){
 	std::cout << "Destructor called" << std::endl;
 	return ;
 }
 
-void AAnimal::makeSound() const{
+void Animal::makeSound() const{
 	std::cout << "The animal makes its own sound" << std::endl;
 }
 
-std::string  AAnimal::getType() const{
+std::string  Animal::getType() const{
 	return this->type;
 }

@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 10:38:32 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/10 11:31:57 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:07:16 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 
 int	main(void){
 	
+	
 	std::cout << "**** Animal set:" << std::endl;
-	const AAnimal* meta = new AAnimal();
+	const Animal* meta = new Animal();
 	meta->makeSound();
 	std::cout << std::endl;
 
 	int size = 0;
-	AAnimal* tab[6];
+	Animal* tab[6];
 	
 	while (size < 6){
 		std::cout << "animal " << size + 1 <<  " :" << std::endl;

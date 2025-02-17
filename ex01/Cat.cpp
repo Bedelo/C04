@@ -6,14 +6,15 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/08 10:55:54 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/17 10:20:04 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(void): _type("Cat"){
+Cat::Cat(void): Animal(){
 	std::cout << "Cat Constructor default called" << std::endl;
+	this->_type = "Cat";
 	_myBrain = new Brain();
 	return ;
 }
@@ -28,13 +29,14 @@ Cat & Cat::operator=(Cat const & rhs){
 	std::cout << "Cat Copy assignment operator called" << std::endl;
 	if (this != &rhs){
 		this->_type = rhs._type;
+		this->_myBrain = rhs._myBrain;
 	}
 	return *this;
 }
 
 Cat::~Cat(void){
 	std::cout << "Cat Destructor called" << std::endl;
-	delete _myBrain;
+	delete this->_myBrain;
 	return ;
 }
 
