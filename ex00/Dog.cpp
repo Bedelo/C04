@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:17:45 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 09:55:01 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 15:44:36 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,4 @@ Dog::~Dog(void){
 void Dog::makeSound() const{
 	std::cout << "The Dog barks: Ouaf Ouaf!" << std::endl;
 	return ;
-}
-
-std::string Dog::getType() const{
-	return this->type;
 }

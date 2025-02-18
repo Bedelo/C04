@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:35:05 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/18 11:23:57 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 16:37:13 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ private:
 	AMateria	*_items[4];
 	
 public:
+	 Character(void); 
 	 Character(std::string name);
 	 Character(const Character & src); 
 	 Character & operator=(const Character & rhs);
-	 virtual ~Character(void);
+	 ~Character(void);
 	 
 	 virtual std::string const & getName() const;
 	 virtual void equip(AMateria* m);

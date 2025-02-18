@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 09:54:49 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 15:44:42 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,4 @@ Cat::~Cat(void){
 void Cat::makeSound() const{
 	std::cout << "The Cat meows: MEOW MEOW!" << std::endl;
 	return ;
-}
-
-std::string Cat::getType() const{
-	return this->type;
 }

@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/18 11:17:16 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 16:35:14 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ public:
 	Dog(void);
 	Dog(Dog const & src);
 	Dog & operator=(Dog const & rhs);
-	virtual ~Dog(void);
+	 ~Dog(void);
 	
-	virtual void makeSound() const;
+	void makeSound() const;
 
 private:
 	Brain		*_myBrain;

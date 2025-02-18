@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:17:45 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:19:43 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 16:30:11 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,3 @@ void Dog::makeSound() const{
 	return ;
 }
 
-std::string Dog::getType() const{
-	return this->_type;
-}

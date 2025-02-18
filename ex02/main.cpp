@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 10:38:32 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 16:32:55 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 16:36:18 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(void){
 		std::cout << std::endl;
 	}
 
-	// delete meta;
+
 	int iter = 0;
 	while (iter < 6){
 		std::cout << "Removing of Animal " << iter + 1 << ":" << std::endl;

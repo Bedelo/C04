@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:39 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:43:29 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 15:43:54 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,10 @@ public:
 	Dog(void);
 	Dog(Dog const & src);
 	Dog & operator=(Dog const & rhs);
-	virtual ~Dog(void);
+	~Dog(void);
 	
-	virtual void makeSound() const;
-	virtual std::string getType() const;
-
-// private:
-// 	std::string type;	
+	void makeSound() const;
+	
 };
 
 #endif 

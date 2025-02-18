@@ -6,11 +6,16 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:37:38 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/18 14:45:43 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 15:51:12 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+
+
+Character::Character(void):ICharacter(){
+	return ;
+}
 
 Character::Character(std::string name):ICharacter(){
 	this->_name = name;
