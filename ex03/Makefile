@@ -5,9 +5,9 @@ RM			= rm -f
 
 SRCS	=	./main.cpp \
 			./AMateria.cpp \
-			./MateriaSource \
-			./Character \
-			./Cure \
+			./MateriaSource.cpp \
+			./Character.cpp \
+			./Cure.cpp \
 			./Ice.cpp
 			
 			
