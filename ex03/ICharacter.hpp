@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:18:53 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 11:30:41 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 10:43:34 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <string>
 #include "AMateria.hpp"
+
+class AMateria;
 
 class ICharacter{
 	

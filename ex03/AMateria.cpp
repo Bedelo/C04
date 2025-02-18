@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:07:33 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 16:05:23 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 14:24:26 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,10 @@ std::string const & AMateria::getType() const{
 }
 
 void AMateria::use(ICharacter& target){
-	std::cout << "Using of " << this->_type << " on target " << target.getName() << std::endl;
+	if (this->_type == "ice")
+		std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
+	else if (this->_type == "cure")
+		std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
+	else 
+		std::cout << "Invalid type" << std::endl;
 }

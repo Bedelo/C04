@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:37:38 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 16:08:17 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 14:12:12 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Character::Character(std::string name):ICharacter(){
 Character::Character(Character const & src){
 	*this = src;
 	for(int i = 0; i < 4 ; i++){
-		delete this->_items[i];
+		this->_items[i] = NULL;
 	}
 	return ;
 }
@@ -32,9 +32,12 @@ Character & Character::operator=(Character const & rhs){
 	if (this != &rhs){
 		this->_name = rhs._name;
 		for (int i = 0; i < 4 ; i++){
-			this->_items[i] = NULL;
+			if (this->_items[i])
+				delete this->_items[i];
+			this->_items[i] = rhs._items[i];
 		}
 	}
+	return *this;
 }
 
 Character::~Character(void){
@@ -50,8 +53,10 @@ std::string const & Character::getName() const{
 
 void Character::equip(AMateria* m){
 	for(int i = 0; i < 4 ; i++){
-		if (this->_items[i] == nullptr);
+		if (this->_items[i] == NULL){
 			this->_items[i] = m;
+			break ;
+		}
 	}
 	return ;
 }

@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 12:53:36 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 17:15:40 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 11:16:10 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ public:
 	virtual ~Cat(void);
 	
 	virtual void makeSound() const;
-	virtual std::string getType() const;
 
 private:
 	Brain		*_myBrain;

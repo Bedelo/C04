@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:41:48 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 13:07:33 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 14:25:36 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,14 +38,7 @@ Cure::~Cure(){
 	return ;
 }
 
-std::string const & Cure::getType() const{
-	return this->_type;	
-}
 
 Cure* Cure::clone() const{
 	return new Cure();
-}
-
-void Cure::use(ICharacter& target){
-	std::cout << "* heals"<< target.getName() <<"’s wounds *" << std::endl;
 }

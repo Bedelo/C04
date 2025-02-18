@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:35:05 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 17:17:03 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 11:23:57 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class Character: public ICharacter{
 
 private:
 	std::string	_name;
-	AMateria	*_items[4];	
+	AMateria	*_items[4];
 	
 public:
 	 Character(std::string name);
@@ -35,3 +35,4 @@ public:
 };
 
 #endif
+

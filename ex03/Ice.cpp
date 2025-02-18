@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 11:40:38 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 13:05:19 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 14:25:53 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,7 @@ Ice::~Ice(){
 	return ;
 }
 
-std::string const & Ice::getType() const{
-	return this->_type;	
-}
 
 Ice* Ice::clone() const{
 	return new Ice();
-}
-
-void Ice::use(ICharacter& target){
-	std::cout << "* shoots an ice bolt at "<< target.getName() <<" *" << std::endl;
 }

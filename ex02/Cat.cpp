@@ -6,7 +6,7 @@
 /*   By: bsunda <bsunda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:44:30 by bsunda            #+#    #+#             */
-/*   Updated: 2025/02/17 10:50:27 by bsunda           ###   ########.fr       */
+/*   Updated: 2025/02/18 11:15:59 by bsunda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,3 @@ void Cat::makeSound() const{
 	return ;
 }
 
-std::string Cat::getType() const{
-	return this->_type;
-}
